@@ -8,13 +8,13 @@
 
 ## 2. 相关论文：
 
-本文中的生成模型结构使用该论文中的结构：[Perceptual Losses for Real-Time Style Transfer](../included module/Perceptual Losses for Real-Time Style Transfer.md)
+本文中的生成模型结构使用该论文中的结构：[Perceptual Losses for Real-Time Style Transfer](../included_module/PerceptualLossesforReal-TimeStyleTransfer.md)
 
-本文中的判别模型结构使用该论文中的结构：[Image-to-Image Translation with Conditional Adversarial Networks](../included module/Image-to-Image Translation with Conditional Adversarial Networks.md)
+本文中的判别模型结构使用该论文中的结构：[Image-to-Image Translation with Conditional Adversarial Networks](../includedmodule/Image-to-ImageTranslationwithConditionalAdversarialNetworks.md)
 
 ## 3. 模型架构
 
-![image-20211113171921164](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113171921164.png)
+![image-20211113171921164](././EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113171921164.png)
 
 ### 1. 边缘生成网络
 
@@ -22,17 +22,17 @@
 
 总损失：
 
-![image-20211113171628722](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113171628722.png)
+![image-20211113171628722](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113171628722.png)
 
 对抗损失：
 
-![image-20211113170602559](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113170602559.png)
+![image-20211113170602559](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113170602559.png)
 
-![image-20211113170640637](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113170640637.png)
+![image-20211113170640637](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113170640637.png)
 
 特征损失：
 
-![image-20211113171343439](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113171343439.png)
+![image-20211113171343439](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113171343439.png)
 
 ​	注意该特征损失与标准特征损失的区别在于，不在预训练好的其他模型中取输出，而是在 D1 上去每一层的输出计算 L1 损失。因为在ImageNet上预训练的模型不能很好地处理边缘信息。
 
@@ -313,23 +313,23 @@ Estimated Total Size (MB): 28.80
 
 总损失：
 
-![image-20211113184509657](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113184509657.png)
+![image-20211113184509657](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113184509657.png)
 
 对抗损失：
 
-![image-20211113184403218](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113184403218.png)
+![image-20211113184403218](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113184403218.png)
 
 感知损失：
 
 ​	使用预训练模型的指定层算 L1。
 
-![image-20211113184421499](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113184421499.png)
+![image-20211113184421499](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113184421499.png)
 
 样式损失：
 
 ​	使用预训练模型的指定层算Gram矩阵 L1
 
-![image-20211113184451095](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211113184451095.png)
+![image-20211113184451095](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211113184451095.png)
 
 ##### 1. 判别器：
 
@@ -674,6 +674,6 @@ Estimated Total Size (MB): 29.05
 
 ### 1. 为什么使用detach()
 
-![image-20211114232045046](EdgeConnect Structure Guided Image Inpainting using Edge Prediction.assets/image-20211114232045046.png)
+![image-20211114232045046](./EdgeConnectStructureGuidedImageInpaintingusingEdgePrediction.assets/image-20211114232045046.png)
 
 对生成器的output使用detach，使得生成器的参数在判别器的梯度下降时不会产生变化，从而起到单独训练生成器的效果。
