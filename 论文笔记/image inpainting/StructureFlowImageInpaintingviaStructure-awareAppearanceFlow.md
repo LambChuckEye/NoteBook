@@ -20,7 +20,7 @@ Appearance Flow 基础方法 [View synthesis by appearance flow.]()
 
 ## 3. 模型架构：
 
-![image-20211115145914816](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115145914816.png)
+![image-20211115145914816](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115145914816.png)
 
 ### 1. 结构重建器：
 
@@ -28,11 +28,11 @@ Appearance Flow 基础方法 [View synthesis by appearance flow.]()
 
 只使用了对抗损失和L1 损失。
 
-![image-20211115150003403](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150003403.png)
+![image-20211115150003403](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150003403.png)
 
-![image-20211115150011677](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150011677.png)
+![image-20211115150011677](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150011677.png)
 
-![image-20211115150020666](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150020666.png)
+![image-20211115150020666](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150020666.png)
 
 #### 2. 结构:
 
@@ -127,17 +127,17 @@ Layer (type:depth-idx)                        Output Shape              Param #
 
 由L1损失，对抗损失和外观流损失组成
 
-![image-20211115150137835](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150137835.png)
+![image-20211115150137835](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150137835.png)
 
-![image-20211115150206988](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150206988.png)
+![image-20211115150206988](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150206988.png)
 
-![image-20211115150214074](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150214074.png)
+![image-20211115150214074](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150214074.png)
 
 外观流损失定义：
 
-![image-20211115150233283](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150233283.png)
+![image-20211115150233283](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150233283.png)
 
-![image-20211115150243315](StructureFlow Image Inpainting via Structure-aware Appearance Flow.assets/image-20211115150243315.png)
+![image-20211115150243315](StructureFlowImageInpaintingviaStructure-awareAppearanceFlow.assets/image-20211115150243315.png)
 
 #### 2. 结构：
 
