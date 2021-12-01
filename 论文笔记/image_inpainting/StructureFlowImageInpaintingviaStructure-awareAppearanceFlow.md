@@ -16,7 +16,7 @@ Appearance Flow 基础方法 [View synthesis by appearance flow.]()
 
 判别器结构与 BicycleGAN [Toward multimodal image-to-image translation.]() 类似的两个 patch GAN
 
-光谱归一化 [Spectral normalization for generative adversarial networks. ]() **纯数学看不懂！**，貌似是一个WGAN的优化，提供一个GAN中判别器的损失函数计算方法，用来比较两张图片的相似性。
+光谱归一化 [Spectral normalization for generative adversarial networks. ]() **纯数学有待进一步阅读！**，貌似是一个WGAN的优化，提供一个GAN中判别器的损失函数计算方法，用来比较两张图片的相似性。
 
 ## 3. 模型架构：
 
